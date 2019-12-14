@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,11 @@
 		6544076223A4CB1300200DFC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6544076023A4CB1300200DFC /* Main.storyboard */; };
 		6544076423A4CB1500200DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6544076323A4CB1500200DFC /* Assets.xcassets */; };
 		6544076723A4CB1500200DFC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6544076523A4CB1500200DFC /* LaunchScreen.storyboard */; };
+		B3C15881D0185D0D413F0245 /* Pods_helloFirebaseFB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E0D99617631F2A17E1851E0 /* Pods_helloFirebaseFB.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A264AEA03F3FB43ADC63FFC /* Pods-helloFirebaseFB.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloFirebaseFB.release.xcconfig"; path = "Target Support Files/Pods-helloFirebaseFB/Pods-helloFirebaseFB.release.xcconfig"; sourceTree = "<group>"; };
 		6544075723A4CB1300200DFC /* helloFirebaseFB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helloFirebaseFB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6544075A23A4CB1300200DFC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6544075C23A4CB1300200DFC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		6544076323A4CB1500200DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6544076623A4CB1500200DFC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6544076823A4CB1500200DFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E0D99617631F2A17E1851E0 /* Pods_helloFirebaseFB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_helloFirebaseFB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7CBFD3EB661EA4B15D65727 /* Pods-helloFirebaseFB.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-helloFirebaseFB.debug.xcconfig"; path = "Target Support Files/Pods-helloFirebaseFB/Pods-helloFirebaseFB.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3C15881D0185D0D413F0245 /* Pods_helloFirebaseFB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D719B82620E5645BA545176 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B7CBFD3EB661EA4B15D65727 /* Pods-helloFirebaseFB.debug.xcconfig */,
+				0A264AEA03F3FB43ADC63FFC /* Pods-helloFirebaseFB.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		41C535AF22572D03AD2C2BDB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E0D99617631F2A17E1851E0 /* Pods_helloFirebaseFB.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6544074E23A4CB1300200DFC = {
 			isa = PBXGroup;
 			children = (
 				6544075923A4CB1300200DFC /* helloFirebaseFB */,
 				6544075823A4CB1300200DFC /* Products */,
+				3D719B82620E5645BA545176 /* Pods */,
+				41C535AF22572D03AD2C2BDB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6544076B23A4CB1500200DFC /* Build configuration list for PBXNativeTarget "helloFirebaseFB" */;
 			buildPhases = (
+				C2852689D83A0596A0B3775B /* [CP] Check Pods Manifest.lock */,
 				6544075323A4CB1300200DFC /* Sources */,
 				6544075423A4CB1300200DFC /* Frameworks */,
 				6544075523A4CB1300200DFC /* Resources */,
+				1C4AFC3565E209DFEA028043 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +158,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1C4AFC3565E209DFEA028043 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helloFirebaseFB/Pods-helloFirebaseFB-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helloFirebaseFB/Pods-helloFirebaseFB-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helloFirebaseFB/Pods-helloFirebaseFB-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2852689D83A0596A0B3775B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-helloFirebaseFB-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6544075323A4CB1300200DFC /* Sources */ = {
@@ -282,6 +350,7 @@
 		};
 		6544076C23A4CB1500200DFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7CBFD3EB661EA4B15D65727 /* Pods-helloFirebaseFB.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +359,35 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"z\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-weak_framework",
+					"\"Accelerate\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = myyhhuang.com.helloFirebaseFB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +398,7 @@
 		};
 		6544076D23A4CB1500200DFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A264AEA03F3FB43ADC63FFC /* Pods-helloFirebaseFB.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +407,35 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"z\"",
+					"-framework",
+					"\"FBSDKCoreKit\"",
+					"-framework",
+					"\"FBSDKLoginKit\"",
+					"-weak_framework",
+					"\"Accelerate\"",
+					"-weak_framework",
+					"\"Accounts\"",
+					"-weak_framework",
+					"\"AudioToolbox\"",
+					"-weak_framework",
+					"\"CoreGraphics\"",
+					"-weak_framework",
+					"\"CoreLocation\"",
+					"-weak_framework",
+					"\"Foundation\"",
+					"-weak_framework",
+					"\"QuartzCore\"",
+					"-weak_framework",
+					"\"Security\"",
+					"-weak_framework",
+					"\"Social\"",
+					"-weak_framework",
+					"\"UIKit\"",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = myyhhuang.com.helloFirebaseFB;
 				PRODUCT_NAME = "$(TARGET_NAME)";
